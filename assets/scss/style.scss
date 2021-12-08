@@ -1,0 +1,40 @@
+body{
+    background-color: #A4E8E0;
+}
+#calculator{
+    margin-top: 100px;
+    font-size: 20px;
+    #display{
+        height: 100px;
+        padding: 15px;
+        border-bottom: 1px solid gray;
+        background-color: white;
+    }
+    .buttons{
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        .button{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: calc(100%/12*3);
+            height: 85px;
+           transition: 0.2s all;
+            &:hover{
+                background-color: #F8EA8C;
+            }
+        }
+        .result{
+            background-color: #4CD7D0;
+        }
+        .diff{
+            background-color: #F9BDC0;
+        }
+        .zero{
+            width: calc(100%/12*9);
+        }
+    }
+}
